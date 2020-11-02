@@ -125,6 +125,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ds1-G1-QT2">
+                                <rect key="frame" x="20" y="413" width="374" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSd-Mp-ZfV">
+                                <rect key="frame" x="20" y="384" width="100" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qqO-Xk-pvX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -136,7 +150,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Pokemon Details" id="KC7-Kj-zwo"/>
                     <connections>
+                        <outlet property="elementsLabel" destination="Ds1-G1-QT2" id="xo7-x9-d14"/>
                         <outlet property="imageView" destination="xrN-uT-0Qa" id="7NM-fo-oSf"/>
+                        <outlet property="indexLabel" destination="TSd-Mp-ZfV" id="DVc-SF-W2H"/>
                         <outlet property="movesLabel" destination="OZn-gE-Dwb" id="2Iq-Ca-yno"/>
                         <outlet property="nameLabel" destination="7nz-n3-WiN" id="T0U-fq-7we"/>
                     </connections>

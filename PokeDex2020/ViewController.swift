@@ -56,7 +56,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             cell.nameLabel?.text = poke.name
             cell.detailLabel?.text = poke.typeArray.compactMap({$0.element.elementName}).joined(separator: ", ")
             cell.indexLabel?.text = String(poke.id)
-            //cell.urlLabel.text = poke.sprites.sprite
             cell.pokemonImageView.sd_setImage(with: URL(string: poke.sprites.sprite), completed: nil)
         }
         
@@ -74,7 +73,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         vc?.image = currentCell.pokemonImageView.image!
         vc?.name = currentCell.nameLabel.text!
         vc?.moves = poke.movesArray.compactMap({$0.move.moveName}).joined(separator: ", ")
-        
+        vc?.elements = currentCell.detailLabel.text!
+        vc?.index = "Index: \(currentCell.indexLabel.text!)"
         
         
         

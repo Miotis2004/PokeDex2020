@@ -13,12 +13,15 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var movesLabel: UILabel!
-    
+    @IBOutlet weak var indexLabel: UILabel!
+    @IBOutlet weak var elementsLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     
     var image = UIImage()
     var name = ""
     var moves = ""
+    var index = ""
+    var elements = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +29,8 @@ class DetailViewController: UIViewController {
         nameLabel.text = name
         imageView.image = image
         movesLabel.text = moves
-        
+        indexLabel.text = index
+        elementsLabel.text = elements
         
     }
     
