@@ -64,7 +64,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     
     
-    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = storyboard?.instantiateViewController(identifier: "DetailViewController") as? DetailViewController
         
         guard let currentCell = tableView.cellForRow(at: indexPath) as? PokemonCell else {return}
